@@ -1,1 +1,36 @@
+# --- 虛擬環境 (Virtual Environments) ---
+.venv/
+venv/
+env/
+ENV/
+bin/
+lib/
+include/
+share/
+
+# --- Python 暫存與編譯檔 (Python Cache) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- 作業系統產生的檔案 ---
+.DS_Store
+Thumbs.db
+
+# --- 編輯器設定 (IDE/Editors) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- 環境變數設定 (Environment Variables / Secrets) ---
 .env
+.flaskenv
+
+# --- 專案特定輸出 ---
+dist/
+build/
+*.egg-info/
