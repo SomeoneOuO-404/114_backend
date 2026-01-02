@@ -5,7 +5,7 @@ from google.auth.transport import requests as google_requests
 from fastapi import HTTPException, status
 
 GOOGLE_CLIENT_ID = os.getenv("GOOGLE_CLIENT_ID")
-GOOGLE_CLIENT_SECRET = os.getnv("GOOGLE_CLIENT_SECRET")
+GOOGLE_CLIENT_SECRET = os.getenv("GOOGLE_CLIENT_SECRET")
 GOOGLE_TOKEN_URL = "http://oauth2.googleapis.com/token"
 
 def verify_google_id_token(token: str):
